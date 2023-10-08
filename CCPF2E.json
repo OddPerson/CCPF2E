@@ -1,1 +1,21 @@
-
+{
+  "name": "custom-currency",
+  "title": "Custom Currency",
+  "description": "A module to implement a custom currency in Pathfinder 2e campaigns.",
+  "author": "Your Name",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.8.0",
+  "compatibleCoreVersion": "0.8.9",
+  "esmodules": [
+    "./scripts/module.js"
+  ],
+  "styles": [
+    "./styles/styles.css"
+  ],
+  "packs": [],
+  "dependencies": [],
+  "socket": false,
+  "system": "pf2e",
+  "url": "https://github.com/OddPerson/CCPF2E",
+  "manifest": "https://github.com/OddPerson/CCPF2E/edit/main/CCPF2E.json"
+}
