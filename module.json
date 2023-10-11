@@ -2,7 +2,7 @@
   "name": "custom-currency-XP",
     "title": "Custom Experience Currency",
     "description": "A module to implement a custom Experience currency in Pathfinder 2e campaigns.",
-    "author": "Your Name",
+    "author": "OddPerson",
     "version": "0.1.0",
     "minimumCoreVersion": "0.8.0",
     "compatibleCoreVersion": "0.8.9",
