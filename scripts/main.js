@@ -3,6 +3,17 @@ Hooks.once('init', async function() {
     console.log('Custom Experience Currency | Initializing Custom Experience Currency Module');
 });
 
+Hooks.once('init', () => {
+    // Register the template override
+    CONFIG.TEMPLATES['systems']['pf2e']['templates']['actors']['partials']['coinage.hbs'] = 'modules/custom-currency-XP/templates/custom-coinage.hbs';
+
+    // Register custom localization
+    game.i18n.loadStrings({
+        "CustomCurrency.ExperienceLabel": "Experience",
+        "CustomCurrency.ExperienceTitle": "Experience Points"
+    });
+});
+
 // Define a new currency type for Experience
 class ExperienceCurrency {
     constructor(actorData) {
@@ -37,9 +48,3 @@ class CustomActor extends Actor {
 // Register the extended Actor class
 CONFIG.Actor.entityClass = CustomActor;
 
-// Update the character sheet to display the new Experience currency
-Hooks.on('renderActorSheet', (app, html, data) => {
-    const expValue = app.object.data.data.currency.exp;
-    const expHtml = `<div class="currency exp"><label>Experience</label><input type="text" name="data.currency.exp" value="${expValue}" data-dtype="Number"></div>`;
-    html.find('.currencies').append(expHtml);
-});
