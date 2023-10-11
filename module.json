@@ -1,17 +1,24 @@
 {
   "name": "custom-currency-XP",
-  "title": "Custom Currency as XP",
-  "description": "A module to implement a custom currency in Pathfinder 2e campaigns.",
-  "author": "OddPerson",
-  "version": "0.1.0",
-  "minimumCoreVersion": "0.8.0",
-  "compatibleCoreVersion": "0.8.9",
-  "esmodules": [ "./scripts/scripts.js" ],
-  "styles": [ "./styles/styles.css" ],
-  "packs": [],
-  "dependencies": [],
-  "socket": false,
-  "system": "pf2e",
+    "title": "Custom Experience Currency",
+    "description": "A module to implement a custom Experience currency in Pathfinder 2e campaigns.",
+    "author": "Your Name",
+    "version": "0.1.0",
+    "minimumCoreVersion": "0.8.0",
+    "compatibleCoreVersion": "0.8.9",
+    "esmodules": [
+        "./scripts/main.js"
+    ],
+    "templates": [
+        "./templates/custom-coinage.hbs"
+    ],
+    "styles": [
+        "./styles/styles.css"
+    ],
+    "packs": [],
+    "dependencies": [],
+    "socket": false,
+    "system": "pf2e",
   "url": "https://github.com/OddPerson/CCPF2E",
   "manifest": "https://oddperson.github.io/CCPF2E/module.json",
   "download": "https://github.com/OddPerson/CCPF2E/archive/refs/tags/v1.zip"
